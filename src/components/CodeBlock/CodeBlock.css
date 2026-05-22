@@ -1,18 +1,18 @@
 .code-block-wrapper {
-  background: #0d1117;
+  background: #0a0e27;
   border-radius: 8px;
   margin: 1.5rem 0;
   overflow: hidden;
-  border: 1px solid #30363d;
+  border: 1px solid #262d3d;
 }
 
 .code-block-header {
-  background: #161b22;
+  background: #11152b;
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid #262d3d;
 }
 
 .code-block-title {

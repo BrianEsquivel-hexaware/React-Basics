@@ -4,10 +4,10 @@
 
 /* Reason Cards */
 .reason-card {
-  background: #161b22;
+  background: #11152b;
   border-radius: 12px;
   transition: all 0.3s ease;
-  border: 1px solid #30363d;
+  border: 1px solid #262d3d;
   height: 100%;
   text-align: center;
 }
@@ -16,26 +16,26 @@
   transform: translateY(-8px);
   box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
   border-color: #58a6ff;
-  background: #1c2128;
+  background: #151d38;
 }
 
 .reason-card h4 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #e6edf3;
+  color: #eff1f5;
 }
 
 .reason-card p {
-  color: #a8b0bb;
+  color: #c5d0db;
   line-height: 1.6;
 }
 
 /* Topics Section */
 .topics-section {
-  background: #161b22;
+  background: #11152b;
   padding: 3rem 1rem;
   border-radius: 12px;
-  border: 1px solid #30363d;
+  border: 1px solid #262d3d;
 }
 
 .topics-list {
@@ -49,10 +49,10 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #0d1117;
+  background: #0f1324;
   border-radius: 8px;
   border-left: 4px solid #58a6ff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
 
@@ -69,17 +69,17 @@
 }
 
 .topic-item span {
-  color: #e6edf3;
+  color: #eff1f5;
   font-weight: 500;
   font-size: 1rem;
 }
 
 /* Feature Cards */
 .feature-card {
-  background: #161b22;
+  background: #11152b;
   border-radius: 12px;
   transition: all 0.3s ease;
-  border: 1px solid #30363d;
+  border: 1px solid #262d3d;
   height: 100%;
   text-align: center;
 }
@@ -88,17 +88,17 @@
   transform: translateY(-8px);
   box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
   border-color: #58a6ff;
-  background: #1c2128;
+  background: #151d38;
 }
 
 .feature-card h4 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #e6edf3;
+  color: #eff1f5;
 }
 
 .feature-card p {
-  color: #a8b0bb;
+  color: #c5d0db;
 }
 
 @media (max-width: 768px) {

@@ -3,7 +3,7 @@
 }
 
 .table-title {
-  color: #e6edf3;
+  color: #eff1f5;
   margin-bottom: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
@@ -12,38 +12,38 @@
 .table-responsive {
   overflow-x: auto;
   border-radius: 8px;
-  border: 1px solid #30363d;
+  border: 1px solid #262d3d;
 }
 
 .info-table {
   width: 100%;
   border-collapse: collapse;
-  background: #0d1117;
+  background: #0f1324;
 }
 
 .info-table thead {
-  background: #161b22;
-  border-bottom: 2px solid #30363d;
+  background: #11152b;
+  border-bottom: 2px solid #262d3d;
 }
 
 .info-table th {
   padding: 1rem;
   text-align: left;
-  color: #e6edf3;
+  color: #eff1f5;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 .info-table td {
   padding: 1rem;
-  color: #a8b0bb;
-  border-bottom: 1px solid #30363d;
+  color: #c5d0db;
+  border-bottom: 1px solid #262d3d;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
 .info-table tbody tr:hover {
-  background-color: #161b22;
+  background-color: #11152b;
 }
 
 .info-table tbody tr:last-child td {
