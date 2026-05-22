@@ -1,3 +1,5 @@
+import './InfoTable.css';
+
 interface TableItem {
   [key: string]: string;
 }

@@ -1,3 +1,5 @@
+import './CodeBlock.css';
+
 interface CodeBlockProps {
   title: string;
   code: string;
