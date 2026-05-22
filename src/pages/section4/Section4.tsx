@@ -1,6 +1,7 @@
 import "./Section4.css";
 import CodeBlock from "../../components/CodeBlock/CodeBlock";
 import InfoTable from "../../components/InfoTable/InfoTable";
+import CounterExample from "../../components/CounterExample/CounterExample";
 
 function Section4() {
   const stateVsProps = [
@@ -84,6 +85,8 @@ function Counter() {
 export default Counter;`}
           language="typescript"
         />
+
+        <CounterExample />
 
         <h3>State Best Practices</h3>
         <div className="key-points">
