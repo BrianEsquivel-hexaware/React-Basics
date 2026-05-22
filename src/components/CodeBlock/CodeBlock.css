@@ -1,13 +1,28 @@
 .code-block-wrapper {
-  background: #1e1e1e;
+  background: #0d1117;
   border-radius: 8px;
   margin: 1.5rem 0;
   overflow: hidden;
-  border: 1px solid #333;
+  border: 1px solid #30363d;
+}
+
+.code-block-header {
+  background: #161b22;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.code-block-title {
+  color: #79c0ff;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .code-block-lang {
-  color: #888;
+  color: #666;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -29,23 +44,36 @@
 
 /* Syntax highlighting */
 .code-block code .tag {
-  color: #569cd6;
+  color: #79c0ff;
 }
 
 .code-block code .attr {
-  color: #9cdcfe;
+  color: #d2a8ff;
 }
 
 .code-block code .value {
-  color: #ce9178;
+  color: #a5d6ff;
 }
 
 .code-block code .property {
-  color: #9cdcfe;
+  color: #d2a8ff;
 }
 
 .code-block code .keyword {
-  color: #569cd6;
+  color: #ff7b72;
+}
+
+@media (max-width: 768px) {
+  .code-block {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .code-block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
 }
 
 @media (max-width: 768px) {
