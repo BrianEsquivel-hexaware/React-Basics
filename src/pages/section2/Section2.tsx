@@ -41,7 +41,7 @@ function Section2() {
 
   return (
     <div className="section2">
-      <h1>JavaScript, TypeScript & Vite Fundamentals</h1>
+      <h1>Introduction to React</h1>
 
       {/* JavaScript Section */}
       <section className="section-content">
@@ -397,8 +397,8 @@ npm run preview`}
           title="Typical Vite React Project Structure"
           code={`my-react-app/
 ├── src/
-│   ├── App.jsx          # Main React component
-│   ├── main.jsx         # Entry point
+│   ├── App.tsx          # Main React component
+│   ├── main.tsx         # Entry point
 │   ├── index.css        # Global styles
 │   └── assets/          # Images, fonts, etc.
 ├── public/              # Static assets

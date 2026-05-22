@@ -122,19 +122,25 @@
 
 .comparison-box ul {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 1.5rem;
+  margin: 0;
 }
 
 .comparison-box li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0.75rem;
   color: #c5d0db;
+  position: relative;
+  margin-left: 0;
 }
 
 .comparison-box li:before {
   content: "✓";
   margin-right: 0.75rem;
+  margin-left: -1.5rem;
   color: #58a6ff;
   font-weight: bold;
+  display: inline-block;
+  width: 1.5rem;
 }
 
 /* Difference List */
