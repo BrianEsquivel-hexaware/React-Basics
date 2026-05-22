@@ -1,40 +1,47 @@
 .hero-section {
   padding: 2rem 0;
+  color: #eff1f5;
 }
 
 /* Reason Cards */
 .reason-card {
-  background: linear-gradient(135deg, rgba(30, 60, 114, 0.08) 0%, rgba(42, 82, 152, 0.08) 100%);
+  background: #11152b;
   border-radius: 12px;
   transition: all 0.3s ease;
-  border: 1px solid rgba(13, 110, 253, 0.2);
+  border: 1px solid #262d3d;
   height: 100%;
   text-align: center;
 }
 
 .reason-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.15);
-  border-color: #0d6efd;
-  background: linear-gradient(135deg, rgba(30, 60, 114, 0.15) 0%, rgba(42, 82, 152, 0.15) 100%);
+  box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+  border-color: #58a6ff;
+  background: #151d38;
 }
 
 .reason-card h4 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #08060d;
+  color: #eff1f5;
 }
 
 .reason-card p {
-  color: #6b6375;
+  color: #c5d0db;
   line-height: 1.6;
+}
+
+.why-section{
+  color : #eff1f5;
 }
 
 /* Topics Section */
 .topics-section {
-  background: #f8f9fa;
+  background: #11152b;
   padding: 3rem 1rem;
   border-radius: 12px;
+  border: 1px solid #262d3d;
+  color: #eff1f5;
 }
 
 .topics-list {
@@ -48,54 +55,60 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #fff;
+  background: #0f1324;
   border-radius: 8px;
-  border-left: 4px solid #0d6efd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #58a6ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
 
 .topic-item:hover {
   transform: translateX(8px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+  border-left-color: #79c0ff;
 }
 
 .topic-item i {
-  color: #0d6efd;
+  color: #58a6ff;
   font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .topic-item span {
-  color: #08060d;
+  color: #eff1f5;
   font-weight: 500;
   font-size: 1rem;
 }
 
 /* Feature Cards */
+.features-section{
+  color: #eff1f5;
+}
+
 .feature-card {
-  background: #f8f9fa;
+  background: #11152b;
   border-radius: 12px;
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  border: 1px solid #262d3d;
   height: 100%;
   text-align: center;
 }
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border-color: #0d6efd;
+  box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+  border-color: #58a6ff;
+  background: #151d38;
 }
 
 .feature-card h4 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #08060d;
+  color: #eff1f5;
 }
 
 .feature-card p {
-  color: #6b6375;
+  color: #c5d0db;
 }
 
 @media (max-width: 768px) {

@@ -19,7 +19,7 @@ function Home() {
       {/* Hero Section */}
       <div className="hero-section text-center mb-5">
         <h1 className="display-4 fw-bold mb-3">Welcome to React Basics</h1>
-        <p className="lead text-muted mb-4">
+        <p className="lead mb-4">
           Master the fundamentals of React and start building modern web applications today
         </p>
         <button className="btn btn-primary btn-lg me-2" onClick={() => window.open('https://react.dev/learn', '_blank')}>
@@ -83,21 +83,21 @@ function Home() {
             <div className="feature-card p-4 text-center">
               <i className="bi bi-book fs-1 text-primary mb-3"></i>
               <h4>Comprehensive</h4>
-              <p className="text-muted">From basics to advanced concepts, everything you need to know about React</p>
+              <p>From basics to advanced concepts, everything you need to know about React</p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="feature-card p-4 text-center">
               <i className="bi bi-hand-index fs-1 text-primary mb-3"></i>
               <h4>Hands-On</h4>
-              <p className="text-muted">Learn by doing. You can modify this page to see the changes in real-time</p>
+              <p>Learn by doing. You can modify this page to see the changes in real-time</p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="feature-card p-4 text-center">
               <i className="bi bi-person-check fs-1 text-primary mb-3"></i>
               <h4>Beginner-Friendly</h4>
-              <p className="text-muted">No prior React experience needed. We start from the fundamentals</p>
+              <p>No prior React experience needed. We start from the fundamentals</p>
             </div>
           </div>
         </div>
