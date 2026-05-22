@@ -42,6 +42,7 @@ function Section2() {
   return (
     <div className="section2">
       <h1>Introduction to React</h1>
+      <p>Learn what is JavaScript & TypeScript. And how to create your first React application using Vite.</p>
 
       {/* JavaScript Section */}
       <section className="section-content">
