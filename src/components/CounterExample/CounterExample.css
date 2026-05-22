@@ -1,0 +1,140 @@
+.counter-example {
+  background: linear-gradient(135deg, #0f1324 0%, #131829 100%);
+  border: 1px solid #262d3d;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+}
+
+.counter-example h4 {
+  color: #79c0ff;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.counter-display {
+  background: #0a0e27;
+  border: 2px solid #58a6ff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #58a6ff;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+}
+
+.counter-label {
+  color: #c5d0db;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-increment {
+  background: linear-gradient(135deg, #238636 0%, #1a7431 100%);
+  box-shadow: 0 2px 8px rgba(35, 134, 54, 0.3);
+}
+
+.btn-increment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(35, 134, 54, 0.5);
+}
+
+.btn-increment:active {
+  transform: translateY(0);
+}
+
+.btn-decrement {
+  background: linear-gradient(135deg, #da3633 0%, #b91c1c 100%);
+  box-shadow: 0 2px 8px rgba(218, 54, 51, 0.3);
+}
+
+.btn-decrement:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(218, 54, 51, 0.5);
+}
+
+.btn-decrement:active {
+  transform: translateY(0);
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #1f6feb 0%, #0969da 100%);
+  box-shadow: 0 2px 8px rgba(31, 110, 251, 0.3);
+}
+
+.btn-reset:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31, 110, 251, 0.5);
+}
+
+.btn-reset:active {
+  transform: translateY(0);
+}
+
+.counter-description {
+  color: #c5d0db;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.counter-description code {
+  background: #0a0e27;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: #79c0ff;
+  border: 1px solid #262d3d;
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 600px) {
+  .counter-example {
+    padding: 1.5rem;
+  }
+
+  .counter-value {
+    font-size: 2.5rem;
+  }
+
+  .counter-buttons {
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
