@@ -1,5 +1,6 @@
 .hero-section {
   padding: 2rem 0;
+  color: #eff1f5;
 }
 
 /* Reason Cards */
@@ -30,12 +31,17 @@
   line-height: 1.6;
 }
 
+.why-section{
+  color : #eff1f5;
+}
+
 /* Topics Section */
 .topics-section {
   background: #11152b;
   padding: 3rem 1rem;
   border-radius: 12px;
   border: 1px solid #262d3d;
+  color: #eff1f5;
 }
 
 .topics-list {
@@ -75,6 +81,10 @@
 }
 
 /* Feature Cards */
+.features-section{
+  color: #eff1f5;
+}
+
 .feature-card {
   background: #11152b;
   border-radius: 12px;
