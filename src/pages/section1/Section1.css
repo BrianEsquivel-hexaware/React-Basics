@@ -1,5 +1,5 @@
 .section1 {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -7,12 +7,37 @@
 .section1 h1 {
   color: #08060d;
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
-.section1 p {
+.section1 > p {
   color: #6b6375;
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section1 h2 {
+  color: #08060d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #0d6efd;
+  padding-bottom: 0.5rem;
+}
+
+.section1 h3 {
+  color: #08060d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.section1 h4 {
+  color: #08060d;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .section-content {
@@ -20,29 +45,27 @@
   padding: 2rem;
   border-radius: 12px;
   border-left: 4px solid #0d6efd;
+  margin-bottom: 2rem;
 }
 
-.section-content h3 {
-  color: #08060d;
+.section-content p {
+  color: #6b6375;
+  line-height: 1.8;
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .section-content ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 1rem;
 }
 
 .section-content li {
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
   padding-left: 1.5rem;
   color: #6b6375;
   position: relative;
-  border-bottom: 1px solid #e5e4e7;
-}
-
-.section-content li:last-child {
-  border-bottom: none;
+  line-height: 1.6;
 }
 
 .section-content li:before {
@@ -53,12 +76,248 @@
   font-weight: bold;
 }
 
+/* Key Points Box */
+.key-points {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #e5e4e7;
+}
+
+.key-points h4 {
+  margin-bottom: 1rem;
+}
+
+.key-points ul {
+  margin: 0;
+}
+
+.key-points li {
+  margin-bottom: 0.75rem;
+}
+
+/* Companies Grid */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.company-badge {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e4e7;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.company-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #0d6efd;
+}
+
+.company-badge i {
+  color: #0d6efd;
+  font-size: 1.2rem;
+}
+
+.company-badge span {
+  color: #08060d;
+  font-weight: 500;
+}
+
+/* Installation Items */
+.installation-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #e5e4e7;
+  border-left: 4px solid #0d6efd;
+}
+
+.installation-item h4 {
+  color: #0d6efd;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.installation-item i {
+  font-size: 1.3rem;
+}
+
+.installation-item p {
+  color: #6b6375;
+  margin-bottom: 0.75rem;
+}
+
+.installation-item ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.installation-item li {
+  margin-bottom: 0.5rem;
+}
+
+.installation-item code {
+  background: #e5e4e7;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: #0d6efd;
+}
+
+.installation-item a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.installation-item a:hover {
+  text-decoration: underline;
+}
+
+/* Attribute List */
+.attribute-list {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.attribute-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  color: #6b6375;
+  border-bottom: 1px solid #e5e4e7;
+  position: relative;
+}
+
+.attribute-list li:last-child {
+  border-bottom: none;
+}
+
+.attribute-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: #0d6efd;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.attribute-list strong {
+  color: #08060d;
+}
+
+/* Comparison Section */
+.comparison-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.comparison-box {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #698ec5;
+}
+
+.comparison-box h4 {
+  color: #0d6efd;
+}
+
+.comparison-box code {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 0.2rem 0.5rem;
+  padding-bottom: 2rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Difference List */
+.difference-list {
+  list-style: none;
+  padding: 0;
+}
+
+.difference-list li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  border-radius: 8px;
+  border-left: 4px solid #0d6efd;
+  color: #6b6375;
+  line-height: 1.6;
+}
+
+.difference-list strong {
+  color: #08060d;
+}
+
+.difference-list code {
+  background: #e5e4e7;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: #0d6efd;
+}
+
+/* Summary Box */
+.summary-box {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.05) 100%);
+  border-left-color: #0d6efd;
+}
+
+.summary-box h2 {
+  color: #0d6efd;
+}
+
+.summary-box ul {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .section1 {
     padding: 1rem;
   }
 
+  .section1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .section1 h2 {
+    font-size: 1.4rem;
+  }
+
   .section-content {
     padding: 1.5rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .comparison-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .installation-item {
+    padding: 1rem;
   }
 }
