@@ -1,6 +1,6 @@
 .code-block-wrapper {
   background: #0a0e27;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 1.5rem 0;
   overflow: hidden;
   border: 1px solid #262d3d;
@@ -22,7 +22,7 @@
 }
 
 .code-block-lang {
-  color: #666;
+  color: #eff1f5;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;

@@ -15,17 +15,21 @@ function InfoTable({ title, headers, data }: InfoTableProps) {
       <div className="table-responsive">
         <table className="info-table">
           <thead>
-            <tr>
+            <tr className="table-header-row">
               {headers.map((header, index) => (
-                <th key={index}>{header}</th>
+                <th key={index} className="table-header">
+                  {header}
+                </th>
               ))}
             </tr>
           </thead>
           <tbody>
             {data.map((row, rowIndex) => (
-              <tr key={rowIndex}>
+              <tr key={rowIndex} className={`table-row ${rowIndex % 2 === 0 ? 'even' : 'odd'}`}>
                 {headers.map((header, colIndex) => (
-                  <td key={colIndex}>{row[header]}</td>
+                  <td key={colIndex} className="table-cell">
+                    {row[header]}
+                  </td>
                 ))}
               </tr>
             ))}

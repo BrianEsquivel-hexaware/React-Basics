@@ -9,7 +9,7 @@ function CodeBlock({ title, code, language }: CodeBlockProps) {
     <div className="code-block-wrapper">
       <div className="code-block-header">
         <h4 className="code-block-title">{title}</h4><br/>
-        <span className="code-block-lang">Language: {language}</span>
+        <p className="code-block-lang">Language: {language}</p>
       </div>
       <pre className="code-block">
         <code>{code}</code>
