@@ -84,7 +84,7 @@
 .btn-decrement:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(218, 54, 51, 0.5);
-  color: #c5d0db !important;
+  color: #ffffff !important;
 }
 
 .btn-decrement:active {
@@ -99,7 +99,7 @@
 .btn-reset:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(31, 110, 251, 0.5);
-  color: #c5d0db !important;
+  color: #ffffff !important;
 }
 
 .btn-reset:active {

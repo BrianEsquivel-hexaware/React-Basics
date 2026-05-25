@@ -4,11 +4,10 @@ import InfoTable from "../../components/InfoTable/InfoTable";
 
 function Section9() {
   const stylingMethodsData = [
-    { Method: "Inline Styles", Pros: "Quick, scoped to component", Cons: "Not reusable, hard to maintain", Use: "Simple, temporary styles" },
-    { Method: "Traditional CSS", Pros: "Powerful, familiar", Cons: "Global scope, name conflicts", Use: "Main styling approach" },
-    { Method: "CSS Modules", Pros: "Scoped, reusable, no conflicts", Cons: "Setup required", Use: "Large projects" },
-    { Method: "Bootstrap", Pros: "Ready-made, responsive, fast", Cons: "Less custom", Use: "Rapid development" },
-    { Method: "Tailwind CSS", Pros: "Utility-first, highly customizable", Cons: "Learning curve", Use: "Modern projects" },
+    { Method: "Inline Styles", Pros: "Quick, scoped to component", Cons: "Not reusable, hard to maintain" },
+    { Method: "Traditional CSS", Pros: "Powerful, familiar", Cons: "Global scope, name conflicts" },
+    { Method: "CSS Modules", Pros: "Scoped, reusable, no conflicts", Cons: "Setup required" },
+    { Method: "Bootstrap", Pros: "Ready-made, responsive, fast", Cons: "Less custom" },
   ];
 
   const bootstrapClassesData = [
@@ -395,7 +394,7 @@ function Utilities() {
         </p>
         <InfoTable
           title="Styling Methods Overview"
-          headers={["Method", "Pros", "Cons", "Use Case"]}
+          headers={["Method", "Pros", "Cons"]}
           data={stylingMethodsData}
         />
       </section>
