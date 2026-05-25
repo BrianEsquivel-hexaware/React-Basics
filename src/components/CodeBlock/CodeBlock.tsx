@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+import hljs from 'highlight.js';
 import './CodeBlock.css';
 
 interface CodeBlockProps {
@@ -7,6 +9,15 @@ interface CodeBlockProps {
 }
 
 function CodeBlock({ title, code, language }: CodeBlockProps) {
+  const highlightedCode = useMemo(() => {
+    try {
+      return hljs.highlight(code, { language: language.toLowerCase() }).value;
+    } catch {
+      // Si el lenguaje no es reconocido, usa auto-detect
+      return hljs.highlightAuto(code).value;
+    }
+  }, [code, language]);
+
   return (
     <div className="code-block-wrapper">
       <div className="code-block-header">
@@ -14,7 +25,10 @@ function CodeBlock({ title, code, language }: CodeBlockProps) {
         <p className="code-block-lang">Language: {language}</p>
       </div>
       <pre className="code-block">
-        <code>{code}</code>
+        <code
+          className={`hljs language-${language.toLowerCase()}`}
+          dangerouslySetInnerHTML={{ __html: highlightedCode }}
+        />
       </pre>
     </div>
   );
