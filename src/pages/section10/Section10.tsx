@@ -13,11 +13,11 @@ function Section10() {
   ];
 
   const performanceTipsData = [
-    { Technique: "React.memo()", Impact: "Prevents re-renders of unchanged props", Use: "Expensive components" },
-    { Technique: "useCallback()", Impact: "Memoizes function references", Use: "Functions passed as props" },
-    { Technique: "useMemo()", Impact: "Memoizes expensive calculations", Use: "Heavy computations" },
-    { Technique: "Code Splitting", Impact: "Loads code only when needed", Use: "Large apps" },
-    { Technique: "Lazy Loading", Impact: "Defers non-critical content", Use: "Images, heavy components" },
+    { Technique: "React.memo()", Impact: "Prevents re-renders of unchanged props", Usage: "Expensive components" },
+    { Technique: "useCallback()", Impact: "Memoizes function references", Usage: "Functions passed as props" },
+    { Technique: "useMemo()", Impact: "Memoizes expensive calculations", Usage: "Heavy computations" },
+    { Technique: "Code Splitting", Impact: "Loads code only when needed", Usage: "Large apps" },
+    { Technique: "Lazy Loading", Impact: "Defers non-critical content", Usage: "Images, heavy components" },
   ];
 
   const accessibilityData = [
@@ -257,7 +257,7 @@ function UserDetails({ user }) {
         <h3>Performance Optimization Techniques</h3>
         <InfoTable
           title="React Performance Tools"
-          headers={["Technique", "Impact", "Use Case"]}
+          headers={["Technique", "Impact", "Usage"]}
           data={performanceTipsData}
         />
 

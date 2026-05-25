@@ -15,8 +15,8 @@
   border-bottom: 1px solid #262d3d;
 }
 
-.code-block-title {
-  color: #79c0ff;
+.code-block-wrapper .code-block-title {
+  color: #79c0ff !important;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -36,31 +36,83 @@
   line-height: 1.6;
 }
 
-.code-block code {
-  color: #d4d4d4;
-  font-family: 'Courier New', Consolas, monospace;
-  white-space: pre;
+.code-block-wrapper .code-block code {
+  color: #ccc9c9 !important;
+  font-family: 'Courier New', Consolas, monospace !important;
+  white-space: pre !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  display: block;
 }
 
-/* Syntax highlighting */
-.code-block code .tag {
-  color: #79c0ff;
+/* highlight.js custom theme colors */
+.code-block-wrapper .code-block code.hljs {
+  background: transparent !important;
+  color: #ccc9c9 !important;
 }
 
-.code-block code .attr {
-  color: #d2a8ff;
+/* Keywords: if, const, function, return, etc. */
+.code-block-wrapper .code-block code .hljs-keyword {
+  color: #ff7b72 !important;
 }
 
-.code-block code .value {
-  color: #a5d6ff;
+/* Strings */
+.code-block-wrapper .code-block code .hljs-string,
+.code-block-wrapper .code-block code .hljs-literal {
+  color: #a5d6ff !important;
 }
 
-.code-block code .property {
-  color: #d2a8ff;
+/* Numbers */
+.code-block-wrapper .code-block code .hljs-number {
+  color: #52e60e !important;
 }
 
-.code-block code .keyword {
-  color: #ff7b72;
+/* Functions */
+.code-block-wrapper .code-block code .hljs-title,
+.code-block-wrapper .code-block code .hljs-function .hljs-title {
+  color: #d2a8ff !important;
+}
+
+/* HTML Tags */
+.code-block-wrapper .code-block code .hljs-tag {
+  color: #79c0ff !important;
+}
+
+/* Attributes */
+.code-block-wrapper .code-block code .hljs-attr {
+  color: #d2a8ff !important;
+}
+
+/* Attributes values */
+.code-block-wrapper .code-block code .hljs-attr-value {
+  color: #a5d6ff !important;
+}
+
+/* Comments */
+.code-block-wrapper .code-block code .hljs-comment {
+  color: #6e7681 !important;
+}
+
+/* Built-ins and properties */
+.code-block-wrapper .code-block code .hljs-built_in,
+.code-block-wrapper .code-block code .hljs-property {
+  color: #d2a8ff !important;
+}
+
+/* Variables */
+.code-block-wrapper .code-block code .hljs-variable {
+  color: #ccc9c9 !important;
+}
+
+/* Template strings */
+.code-block-wrapper .code-block code .hljs-template-string {
+  color: #a5d6ff !important;
+}
+
+/* Operators */
+.code-block-wrapper .code-block code .hljs-operator {
+  color: #79c0ff !important;
 }
 
 @media (max-width: 768px) {
