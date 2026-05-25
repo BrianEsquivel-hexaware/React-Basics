@@ -15,8 +15,8 @@
   border-bottom: 1px solid #262d3d;
 }
 
-.code-block-title {
-  color: #79c0ff;
+.code-block-wrapper .code-block-title {
+  color: #79c0ff !important;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -36,31 +36,34 @@
   line-height: 1.6;
 }
 
-.code-block code {
-  color: #d4d4d4;
-  font-family: 'Courier New', Consolas, monospace;
-  white-space: pre;
+.code-block-wrapper .code-block code {
+  color: #ccc9c9 !important;
+  font-family: 'Courier New', Consolas, monospace !important;
+  white-space: pre !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 /* Syntax highlighting */
-.code-block code .tag {
-  color: #79c0ff;
+.code-block-wrapper .code-block code .tag {
+  color: #79c0ff !important;
 }
 
-.code-block code .attr {
-  color: #d2a8ff;
+.code-block-wrapper .code-block code .attr {
+  color: #d2a8ff !important;
 }
 
-.code-block code .value {
-  color: #a5d6ff;
+.code-block-wrapper .code-block code .value {
+  color: #a5d6ff !important;
 }
 
-.code-block code .property {
-  color: #d2a8ff;
+.code-block-wrapper .code-block code .property {
+  color: #d2a8ff !important;
 }
 
-.code-block code .keyword {
-  color: #ff7b72;
+.code-block-wrapper .code-block code .keyword {
+  color: #ff7b72 !important;
 }
 
 @media (max-width: 768px) {
