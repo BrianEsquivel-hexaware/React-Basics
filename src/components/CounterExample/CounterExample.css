@@ -45,7 +45,6 @@
   justify-content: center;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
-  color: white;
 }
 
 .btn {
@@ -56,7 +55,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: white;
+  color: #c5d0db !important;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -70,6 +69,7 @@
 .btn-increment:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(35, 134, 54, 0.5);
+  color: #ffffff !important;
 }
 
 .btn-increment:active {
@@ -84,6 +84,7 @@
 .btn-decrement:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(218, 54, 51, 0.5);
+  color: #c5d0db !important;
 }
 
 .btn-decrement:active {
@@ -98,6 +99,7 @@
 .btn-reset:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(31, 110, 251, 0.5);
+  color: #c5d0db !important;
 }
 
 .btn-reset:active {

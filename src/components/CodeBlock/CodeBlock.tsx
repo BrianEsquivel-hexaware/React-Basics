@@ -13,7 +13,7 @@ function CodeBlock({ title, code, language }: CodeBlockProps) {
     try {
       return hljs.highlight(code, { language: language.toLowerCase() }).value;
     } catch {
-      // Si el lenguaje no es reconocido, usa auto-detect
+      // If language is not supported or highlighting fails, return the raw code
       return hljs.highlightAuto(code).value;
     }
   }, [code, language]);
