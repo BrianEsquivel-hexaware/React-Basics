@@ -1,0 +1,154 @@
+.section6 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section6 h1 {
+  color: #eff1f5;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.section6 > p {
+  color: #c5d0db;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.section6 h2 {
+  color: #eff1f5;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #58a6ff;
+  padding-bottom: 0.5rem;
+}
+
+.section6 h3 {
+  color: #eff1f5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.section6 h4 {
+  color: #eff1f5;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.section-content {
+  background: #11152b;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #58a6ff;
+  margin-bottom: 2rem;
+  border: 1px solid #262d3d;
+}
+
+.section-content p {
+  color: #c5d0db;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.section-content code {
+  background: #0f1324;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: #79c0ff;
+  font-family: 'Courier New', monospace;
+  border: 1px solid #262d3d;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.section-content li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: #c5d0db;
+  position: relative;
+  line-height: 1.6;
+}
+
+.section-content li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+.key-points {
+  background: #0f1324;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #262d3d;
+}
+
+.key-points h4 {
+  color: #eff1f5;
+  margin-bottom: 1rem;
+}
+
+.key-points ul {
+  margin: 0;
+}
+
+.key-points li {
+  margin-bottom: 0.75rem;
+  color: #c5d0db;
+}
+
+.summary-box {
+  background: #11152b;
+  border-left-color: #58a6ff;
+  border: 1px solid #262d3d;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.summary-box h3 {
+  color: #79c0ff;
+  margin-top: 0;
+}
+
+.summary-box ul {
+  margin-bottom: 0;
+}
+
+.summary-box li {
+  color: #c5d0db;
+  margin-bottom: 0.75rem;
+}
+
+.summary-box strong {
+  color: #eff1f5;
+}
+
+@media (max-width: 768px) {
+  .section6 {
+    padding: 1rem;
+  }
+
+  .section6 h1 {
+    font-size: 1.8rem;
+  }
+
+  .section6 h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-content {
+    padding: 1.5rem;
+  }
+}
