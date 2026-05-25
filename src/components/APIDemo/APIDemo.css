@@ -1,0 +1,179 @@
+.api-demo {
+  background: linear-gradient(135deg, #0f1324 0%, #131829 100%);
+  border: 1px solid #262d3d;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+}
+
+.api-demo h4 {
+  color: #79c0ff;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.demo-description {
+  color: #c5d0db;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.api-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.api-controls label {
+  color: #eff1f5;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.api-controls select {
+  padding: 0.6rem 1rem;
+  background: #11152b;
+  border: 1px solid #262d3d;
+  border-radius: 6px;
+  color: #eff1f5;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.api-controls select:hover,
+.api-controls select:focus {
+  outline: none;
+  border-color: #58a6ff;
+  background: #131829;
+}
+
+.api-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  color: #c5d0db;
+}
+
+.api-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #262d3d;
+  border-top-color: #58a6ff;
+  border-radius: 50%;
+  animation: apiSpin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes apiSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.api-error {
+  background: linear-gradient(135deg, #0f0d1a 0%, #1a0f15 100%);
+  border: 1px solid #da3633;
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #f85149;
+  text-align: center;
+}
+
+.api-error p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.api-empty {
+  background: #11152b;
+  border: 1px dashed #262d3d;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #566575;
+}
+
+.api-empty p {
+  margin: 0;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-card {
+  background: #11152b;
+  border: 1px solid #262d3d;
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.post-header h5 {
+  color: #79c0ff;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.user-id {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #79c0ff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.post-card h6 {
+  color: #eff1f5;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.post-card p {
+  color: #c5d0db;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .api-demo {
+    padding: 1.5rem;
+  }
+
+  .api-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .api-controls select {
+    width: 100%;
+  }
+
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
