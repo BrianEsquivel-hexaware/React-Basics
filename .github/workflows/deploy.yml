@@ -54,7 +54,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: dist
+          path: pages-artifact
+      - name: Extract built site
+        run: |
+          mkdir dist
+          tar -xf pages-artifact/artifact.tar -C dist
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
       - name: Run Playwright tests
