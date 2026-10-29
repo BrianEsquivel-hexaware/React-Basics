@@ -6,7 +6,7 @@ test('home page displays the course introduction and a loaded React logo', async
   await page.goto('./');
 
   await expect(
-    page.getByRole('heading', { name: 'Welcome to React Basics' }),
+    page.getByRole('heading', { name: 'Welcome to React Basic' }),
   ).toBeVisible();
 
   const logo = page.getByRole('img', { name: 'Logo' }).first();
