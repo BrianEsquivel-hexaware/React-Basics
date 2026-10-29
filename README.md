@@ -8,6 +8,18 @@ The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys
 In GitHub, open **Settings > Pages** and select **GitHub Actions** as the deployment source. Once the workflow completes, the site URL will appear in that section and in the `github-pages` environment in Actions.
 
 The workflow automatically configures the base path based on the repository name and keeps internal routes working when the page is reloaded.
+The deployment job runs only after the production build and all Playwright end-to-end tests pass. If any test fails, GitHub Actions skips the deployment.
+
+## Running end-to-end tests
+
+Install dependencies and the Chromium browser, then build and test the production site:
+
+```sh
+npm ci
+npx playwright install chromium
+npm run build
+npm run test:e2e
+```
 
 Currently, two official plugins are available:
 
