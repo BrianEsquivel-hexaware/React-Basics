@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import reactLogo from '../../assets/react.svg';
 import './Header.css';
 
 function Header() {
@@ -32,7 +33,7 @@ function Header() {
       <header className="navbar-custom shadow-sm sticky-top">
         <div className="navbar-content">
           <Link to="/" className="navbar-brand">
-            <img src="src/assets/react.svg" alt="Logo" /> 
+            <img src={reactLogo} alt="Logo" />
             <h3 className="navbar-title">React Basics</h3>
           </Link>
           <button

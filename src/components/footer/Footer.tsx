@@ -1,5 +1,6 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import reactLogo from '../../assets/react.svg';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ function Footer() {
         <div className="row py-3">
           <div className="col-md-4 mb-4 mb-md-0">
             <h4 className="fw-bold mb-3">
-              <img src="src/assets/react.svg" alt="Logo" /> React Basics
+              <img src={reactLogo} alt="Logo" /> React Basics
             </h4>
             <p className="textInfo">
               Learn how to create modern web <br/> applications with this React Course!
