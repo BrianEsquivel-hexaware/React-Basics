@@ -18,7 +18,7 @@ function Home() {
     <div className="py-5">
       {/* Hero Section */}
       <div className="hero-section text-center mb-5">
-        <h1 className="display-4 fw-bold mb-3">Random Stuff</h1>
+        <h1 className="display-4 fw-bold mb-3">Welcome to React Basics</h1>
         <p className="lead mb-4">
           Master the fundamentals of React and start building modern web applications today
         </p>
